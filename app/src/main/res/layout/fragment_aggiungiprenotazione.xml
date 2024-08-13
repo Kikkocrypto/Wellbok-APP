@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.aggiungiPrenotazione.AddReservation_Fragment">
+
+
+    <Spinner
+        android:id="@+id/userSpinner"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:hint="Seleziona utente"
+        android:scrollbarSize="24dp"
+        android:spinnerMode="dialog"
+        android:background="@drawable/spinner_border"
+        app:layout_constraintStart_toStartOf="@+id/vg1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreateUser" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <TextView
+        android:id="@+id/tvCreateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Crea \nPrenotazione"
+        android:textSize="30dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="@+id/vg1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:backgroundTint="#0099FF"
+        android:text="INSERISCI"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vg2"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDay"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <EditText
+        android:id="@+id/etStartTime"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Aggiungi Orario Inizio"
+        android:inputType="time"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/vg1"
+        app:layout_constraintTop_toBottomOf="@+id/userSpinner" />
+
+    <EditText
+        android:id="@+id/etFinishTime"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Aggiungi Orario Fine"
+        android:inputType="time"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/vg1"
+        app:layout_constraintTop_toBottomOf="@+id/etStartTime" />
+
+    <EditText
+        android:id="@+id/etDay"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Giorno"
+        android:inputType="date"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/vg1"
+        app:layout_constraintTop_toBottomOf="@+id/etFinishTime" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="Seleziona Utente"
+        android:textColor="#0099FF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userSpinner"
+        app:layout_constraintStart_toStartOf="@+id/vg1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

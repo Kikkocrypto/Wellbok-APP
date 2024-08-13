@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nome Utente -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="text"
+        android:textSize="24sp" />
+
+    <!-- Cognome Utente -->
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cognome"
+        android:inputType="text"
+        android:textSize="24sp" />
+
+    <!-- Numero di Telefono -->
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero di Telefono"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#3BA800"
+        android:stateListAnimator="@null"
+        android:text="MODIFICA"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:rippleColor="@color/purple_200" />
+
+    <Button
+        android:id="@+id/btnDismiss"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FF5757"
+        android:backgroundTintMode="add"
+        android:stateListAnimator="@null"
+        android:text="ANNULLA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>

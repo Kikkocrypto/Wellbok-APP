@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.wellbook_drawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/inserisci_Utente"
+        android:name="com.example.wellbook_drawer.ui.aggiungiUtente.AddUser_Fragment"
+        android:label="@string/menu_Aggiungiutente"
+        tools:layout="@layout/fragment_aggiungiutente" />
+
+    <fragment
+        android:id="@+id/inserisci_Prenotazione"
+        android:name="com.example.wellbook_drawer.ui.aggiungiPrenotazione.AddReservation_Fragment"
+        android:label="@string/menu_AggiungiPrenotazione"
+        tools:layout="@layout/fragment_aggiungiprenotazione" />
+
+    <fragment
+        android:id="@+id/view_Users"
+        android:name="com.example.wellbook_drawer.ui.viewUsers.ViewUsersFragment"
+        android:label="@string/menu_ViewUsers"
+        layout="@layout/fragment_view_users" />
+    <fragment
+        android:id="@+id/view_Reservations"
+        android:name="com.example.wellbook_drawer.ui.viewReservations.viewReservationFragment"
+        android:label="@string/menu_ViewReservations"
+        layout="@layout/fragment_reservation" />
+</navigation>

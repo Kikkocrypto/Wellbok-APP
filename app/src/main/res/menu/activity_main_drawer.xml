@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/inserisci_Utente"
+            android:icon="@drawable/baseline_add_reaction_24"
+            android:title="@string/menu_Aggiungiutente" />
+        <item
+            android:id="@+id/inserisci_Prenotazione"
+            android:icon="@drawable/baseline_format_list_bulleted_add_24"
+            android:title="@string/menu_AggiungiPrenotazione" />
+        <item
+            android:id="@+id/view_Users"
+            android:icon="@drawable/baseline_groups_2_24"
+            android:title="@string/menu_ViewUsers" />
+        <item
+            android:id="@+id/view_Reservations"
+            android:icon="@drawable/baseline_perm_contact_calendar_24"
+            android:title="@string/menu_ViewReservations" />
+    </group>
+</menu>
